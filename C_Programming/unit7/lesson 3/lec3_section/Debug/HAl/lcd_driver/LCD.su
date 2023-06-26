@@ -1,0 +1,11 @@
+LCD.c:11:6:delay_ms	24	static
+LCD.c:17:6:LCD_GOTO_XY	16	static
+LCD.c:30:6:LCD_clearscreen	8	static
+LCD.c:34:6:LCD_kick	8	static
+LCD.c:41:7:LCD_PORT_OUT	8	static
+LCD.c:85:7:LCD_PORT_IN	8	static
+LCD.c:131:6:LCD_INIT	8	static
+LCD.c:181:6:LCD_check_lcd_isbusy	8	static
+LCD.c:202:6:LCD_WRITE_COMMAND	16	static
+LCD.c:222:6:LCD_WRITE_CHAR	16	static
+LCD.c:243:6:LCD_WRITE_STRING	24	static
