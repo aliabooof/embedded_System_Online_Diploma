@@ -11,27 +11,34 @@
 //-----------------------------
 //Includes
 //-----------------------------
-#include "Stm32_f103c6_Drivers_Gpio.h"
-#include "stm32_f103x6.h"
+#include "stm32_f103c6_gpio_drivers.h"
+#include "stm32f103x6.h"
+#include <stdlib.h>
+#include <stdint.h>
 
 
-//-----------------------------
-//global variables
-//-----------------------------
+#define LCD_PORT					GPIOA
 
-GPIO_PIN_Config_t* PinCfg ;
+#define LCD_CTRL					GPIOA
 
-//-----------------------------
-//Macros Configuration References
-//-----------------------------
+//LCD Controls
+#define RS_SWITCH				GPIO_PIN_8
+#define RW_SWITCH				GPIO_PIN_9
+#define ENABLE_SWITCH			GPIO_PIN_10
 
-//@ref LCD_port_pins
-#define LCD_PORT GPIOA
-#define RS_SWITCH GPIO_PIN_8
-#define RW_SWITCH GPIO_PIN_9
-#define E_SWITCH GPIO_PIN_10
+//LCD Modes
+#define EIGHT_BIT_MODE
+//#define FOUR_BIT_MODE
 
-//@ref LCD_MODES
+#ifdef EIGHT_BIT_MODE
+#define DATA_SHIFT 0
+#else
+#define DATA_SHIFT 4
+#endif
+
+
+
+//@ref LCD Commands
 #define LCD_FUNCTION_8BIT_2LINES   					(0x38)
 #define LCD_FUNCTION_4BIT_2LINES   					(0x28)
 #define LCD_MOVE_DISP_RIGHT       					(0x1C)
@@ -52,21 +59,17 @@ GPIO_PIN_Config_t* PinCfg ;
 #define LCD_CLEAR_SCREEN							(0x01)
 #define LCD_ENTRY_MODE								(0x06)
 
-
-//======================================================================================================================
-/*
-* ===============================================
-* APIs Supported by "HAL LCD DRIVER"
-* ===============================================
-*/
-
-void LCD_INIT();
+//LCD Functions APIs
+void LCD_INIT(void);
+void LCD_Clear_Screen(void);
 void LCD_WRITE_COMMAND(unsigned char command);
-void LCD_WRITE_CHAR(unsigned char character);
-void LCD_WRITE_STRING(char* string);
-void LCD_check_lcd_isbusy(void);
+void LCD_WRITE_CHAR(unsigned char  character);
+void LCD_Goto_XY(unsigned char line, unsigned char position);
+void LCD_WRITE_STRING(char * string);
+void LCD_isBusy(void);
 
-
-
+//Helper Functions APIs
+void config_dataIN_ports(void);
+void config_dataOUT_ports(void);
 
 #endif /* INC_LCD_H_ */

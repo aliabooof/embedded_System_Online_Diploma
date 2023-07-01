@@ -26,6 +26,8 @@ HAl/Keypad_driver \
 HAl/lcd_driver \
 Src \
 Startup \
+stm32_f103c6_drivers/EXTI \
 stm32_f103c6_drivers/GPIO \
-stm32_f103c6_drivers \
+stm32_f103c6_drivers/RCC \
+stm32_f103c6_drivers/UART \
 

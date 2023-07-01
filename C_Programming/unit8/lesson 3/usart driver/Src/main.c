@@ -18,65 +18,51 @@
  */
 
 #if !defined(__SOFT_FP__) && defined(__ARM_FP)
-#warning "FPU is not initialized, but the project is compiling for an FPU. Please initialize the FPU before use."
-
+  #warning "FPU is not initialized, but the project is compiling for an FPU. Please initialize the FPU before use."
 #endif
 
+#include "stm32f103x6.h"
+#include "stm32_f103c6_gpio_drivers.h"
+#include "Stm32_F103C6_EXTI_driver.h"
+#include "stm32_f103c6_USART_drivers.h"
+#include "lcd.h"
+#include "keypad.h"
 
+unsigned char flag;
 
+//APIs
+void clock_init(void);
 
-#include "Stm32_f103c6_Drivers_Gpio.h"
-#include "Stm32f103x6.h"
-#include "KEY_PAD.h"
-#include "LCD.h"
-#include "Stm32_f103c6_Drivers_EXTI.h"
-#include "STM32_F103C6_USART_Driver.h"
+int main(void){
 
-
-unsigned char ch;
-
-void UART_IRQ_Callback (void)
-{
-	MCAL_UART_ReceiveData(USART1, &ch, disable);
-	MCAL_UART_SendData(USART1, &ch, enable);
-}
-
-
-
-void clock_init()
-{
-	// Enable clock of Port A
-	RCC_GPIO_PORTA_CLK_EN();
-
-	// Enable clock of Port B
-	RCC_GPIO_PORTB_CLK_EN();
-
-	// Enable clock for AFIO
-	RCC_AFIO_CLK_EN();
-}
-
-int main(void)
-{
-	UART_Config UART_Configure;
-
+	//Initializing Peripherals
 	clock_init();
+	USART_config_t config;
 
-	UART_Configure.BaudRate = UART_BaudRate_115200;
-	UART_Configure.HardwareFlowControl = UART_HardwareFlowControl_NONE;
-	UART_Configure.IRQ_Enable = UART_IRQ_Enable_RXNEIE;
-	UART_Configure.P_IRQ_CallBack = Abdallah_UART_IRQ_Callback;
-	UART_Configure.Parity = UART_Parity_NONE;
-	UART_Configure.Payload_Length = UART_Payload_Length_8B;
-	UART_Configure.StopBits = UART_StopBits__1;
-	UART_Configure.USART_Mode = UART_Mode_Tx_Rx;
+	config.baud_rate = USART_BAUD_RATE_115200;
+	config.hwFlCt = USART_HWFLCT_NONE;
+	config.IRQ_enable = USART_IRQ_ENABLE_NONE;
+	config.p_IRQ_callback = NULL;
+	config.parity = USART_PARITY_NONE;
+	config.data_lenght = USART_DATA_LENGHT_8B;
+	config.stop_bits = USART_STOP_BITS_1;
+	config.USART_mode = USART_MODE_TX_RX;
 
-	MCAL_UART_Init(USART1, &UART_Configure);
-	MCAL_UART_GPIO_Set_Pins(USART1);
+	MCAL_USART_init(USART1, &config);
+	MCAL_USART_set_pins(USART1);
 
-	while(1)
-	{
-
+	while(1){
+		MCAL_USART_recive_data(USART1, &flag, enable);
+		MCAL_USART_send_data(USART1, &flag, enable);
 	}
 }
 
 
+void clock_init(void){
+	RCC_GPIOA_CLK_EN();
+
+	RCC_GPIOB_CLK_EN();
+
+	RCC_AFIO_CLK_EN();
+
+}

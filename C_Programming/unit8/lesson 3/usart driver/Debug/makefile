@@ -9,8 +9,10 @@ RM := rm -rf
 
 # All of the sources participating in the build are defined here
 -include sources.mk
+-include stm32_f103c6_drivers/UART/subdir.mk
+-include stm32_f103c6_drivers/RCC/subdir.mk
 -include stm32_f103c6_drivers/GPIO/subdir.mk
--include stm32_f103c6_drivers/subdir.mk
+-include stm32_f103c6_drivers/EXTI/subdir.mk
 -include Startup/subdir.mk
 -include Src/subdir.mk
 -include HAl/lcd_driver/subdir.mk
@@ -63,8 +65,8 @@ all: main-build
 main-build: lcd_keybad_lab.elf secondary-outputs
 
 # Tool invocations
-lcd_keybad_lab.elf lcd_keybad_lab.map: $(OBJS) $(USER_OBJS) D:\courses\EmbadedSystemDiploma\C_Programming\embedded_System_Online_Diploma\C_Programming\unit8\usart\ driver\STM32F103C6TX_FLASH.ld makefile objects.list $(OPTIONAL_TOOL_DEPS)
-	arm-none-eabi-gcc -gdwarf-2 -o "lcd_keybad_lab.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m3 -T"D:\courses\EmbadedSystemDiploma\C_Programming\embedded_System_Online_Diploma\C_Programming\unit8\usart driver\STM32F103C6TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="lcd_keybad_lab.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+lcd_keybad_lab.elf lcd_keybad_lab.map: $(OBJS) $(USER_OBJS) D:\courses\EmbadedSystemDiploma\C_Programming\embedded_System_Online_Diploma\C_Programming\unit8\lesson\ 3\usart\ driver\STM32F103C6TX_FLASH.ld makefile objects.list $(OPTIONAL_TOOL_DEPS)
+	arm-none-eabi-gcc -gdwarf-2 -o "lcd_keybad_lab.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m3 -T"D:\courses\EmbadedSystemDiploma\C_Programming\embedded_System_Online_Diploma\C_Programming\unit8\lesson 3\usart driver\STM32F103C6TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="lcd_keybad_lab.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
 	@echo 'Finished building target: $@'
 	@echo ' '
 

@@ -8,25 +8,31 @@
 #ifndef INC_KEYPAD_H_
 #define INC_KEYPAD_H_
 
-#include "stm32_f103c6_drivers_EXTI.h"
-#include "Stm32_f103c6_Drivers_Gpio.h"
-#include "stm32_f103x6.h"
+//-----------------------------
+//Includes
+//-----------------------------
+#include "stm32_f103c6_gpio_drivers.h"
+#include "stm32f103x6.h"
+#include <stdlib.h>
+#include <stdint.h>
 
 
-#define KEYPAD_PORT GPIOB
+// Keypad Information
+#define R0 			GPIO_PIN_0
+#define R1 			GPIO_PIN_1
+#define R2 			GPIO_PIN_3
+#define R3 			GPIO_PIN_4
+#define C0 			GPIO_PIN_5
+#define C1 			GPIO_PIN_6
+#define C2 			GPIO_PIN_7
+#define C3 			GPIO_PIN_8
 
-#define R0 GPIO_PIN_0
-#define R1 GPIO_PIN_1
-#define R2 GPIO_PIN_3
-#define R3 GPIO_PIN_4
-
-#define C0 GPIO_PIN_5
-#define C1 GPIO_PIN_6
-#define C2 GPIO_PIN_7
-#define C3 GPIO_PIN_8
+//Keypad PORT
+#define keypadPORT	GPIOB
 
 
+//Functions APIs
 void KEYPAD_INIT();
-char KEYPAD_GETCHAR();
+char KEYPAD_GET_CHAR();
 
 #endif /* INC_KEYPAD_H_ */
