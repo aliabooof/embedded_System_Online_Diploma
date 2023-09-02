@@ -1,0 +1,8 @@
+"./STM32_F103C6_DRIVERS/EXTI/Stm32_F103C6_EXTI_driver.o"
+"./STM32_F103C6_DRIVERS/GPIO/stm32_f103c6_gpio_drivers.o"
+"./STM32_F103C6_DRIVERS/RCC/stm32_f103c6_RCC_driver.o"
+"./STM32_F103C6_DRIVERS/UART/stm32_f103c6_USART_drivers.o"
+"./Src/main.o"
+"./Src/syscalls.o"
+"./Src/sysmem.o"
+"./Startup/startup_stm32f103c6tx.o"
