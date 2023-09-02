@@ -1,0 +1,9 @@
+../stm32_f103c6_drivers/UART/stm32_f103c6_USART_drivers.c:57:6:MCAL_USART_init	24	static
+../stm32_f103c6_drivers/UART/stm32_f103c6_USART_drivers.c:122:6:MCAL_USART_deinit	16	static
+../stm32_f103c6_drivers/UART/stm32_f103c6_USART_drivers.c:147:6:MCAL_USART_set_pins	24	static
+../stm32_f103c6_drivers/UART/stm32_f103c6_USART_drivers.c:263:6:MCAL_USART_send_data	24	static
+../stm32_f103c6_drivers/UART/stm32_f103c6_USART_drivers.c:291:6:MCAL_USART_recive_data	24	static
+../stm32_f103c6_drivers/UART/stm32_f103c6_USART_drivers.c:328:6:MCAL_USART_TC_status	16	static
+../stm32_f103c6_drivers/UART/stm32_f103c6_USART_drivers.c:334:6:USART1_IRQHandler	8	static
+../stm32_f103c6_drivers/UART/stm32_f103c6_USART_drivers.c:338:6:USART2_IRQHandler	8	static
+../stm32_f103c6_drivers/UART/stm32_f103c6_USART_drivers.c:342:6:USART3_IRQHandler	8	static

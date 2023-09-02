@@ -1,0 +1,13 @@
+Stm32_F103C6_EXTI_driver.c:33:6:enable_NVIC	8
+Stm32_F103C6_EXTI_driver.c:74:6:disable_NVIC	8
+Stm32_F103C6_EXTI_driver.c:115:6:update_EXTI	10
+Stm32_F103C6_EXTI_driver.c:197:6:MCAL_EXTI_GPIO_init	1
+Stm32_F103C6_EXTI_driver.c:211:6:MCAL_EXTI_GPIO_deinit	1
+Stm32_F103C6_EXTI_driver.c:252:6:MCAL_EXTI_GPIO_update	1
+Stm32_F103C6_EXTI_driver.c:262:6:EXTI0_IRQHandler	1
+Stm32_F103C6_EXTI_driver.c:271:6:EXTI1_IRQHandler	1
+Stm32_F103C6_EXTI_driver.c:280:6:EXTI2_IRQHandler	1
+Stm32_F103C6_EXTI_driver.c:289:6:EXTI3_IRQHandler	1
+Stm32_F103C6_EXTI_driver.c:298:6:EXTI4_IRQHandler	1
+Stm32_F103C6_EXTI_driver.c:307:6:EXTI9_5_IRQHandler	6
+Stm32_F103C6_EXTI_driver.c:314:6:EXTI15_10_IRQHandler	7
