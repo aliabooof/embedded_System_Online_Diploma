@@ -2,7 +2,8 @@
  * STM32F103C6_I2C.c
  *
  *  Created on: Jul 16, 2023
- *      Author: Amir
+ *      Author: aliab
+ 
  */
 #include "STM32F103x6_I2C.h"
 
