@@ -32,7 +32,8 @@
 ## Overall progress ![image](https://progress-bar.dev/1/?scale=3&title=Terms&suffix=&width=230&color=aa00ff)
 
 ---
-![image](https://github.com/aliabooof/embedded_System_Online_Diploma/assets/62174374/afa69f43-74be-44aa-8900-166e89e9d888)
+![image](https://github.com/aliabooof/embedded_System_Online_Diploma/assets/62174374/33a8e7ac-cc8e-4e85-86f7-df2689a7ea16)
+
 
 
 ## My Progress Profile: [Click Here](https://www.learn-in-depth.com/online-diploma/aliabooof42%40gmail.com)
