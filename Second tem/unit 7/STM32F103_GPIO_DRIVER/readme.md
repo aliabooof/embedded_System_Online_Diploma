@@ -37,8 +37,6 @@ For detailed usage instructions and examples, refer to  the code comments in the
 
 ## Author
 
-The driver was authored by [Ali AboOuf](https://github.com/yourusername). If you have any questions or suggestions, you can contact the author at [your.email@example.com](mailto:your.email@example.com).
+The driver was authored by [Ali AboOuf]([https://github.com/yourusername](https://github.com/aliabooof)). If you have any questions or suggestions, you can contact the author at [your.email@example.com](aliabooof42@gmail.com).
 
-This GPIO driver simplifies GPIO handling in your STM32F103x6 projects, making it easier to interface with external components and peripherals.
 
-Remember to replace [Your Name](https://github.com/yourusername) and [your.email@example.com](mailto:your.email@example.com) with your actual information.
