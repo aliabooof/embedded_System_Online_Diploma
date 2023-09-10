@@ -1,6 +1,0 @@
-HAL/LCD/LCD.o: ../HAL/LCD/LCD.c ../HAL/LCD/../inc/LCD.h \
- ../Inc/../STM32F103_DRIVERS/inc/STM32_F103C6_Driver.h \
- ../Inc/../STM32F103_DRIVERS/inc/STM32_F103X6.h
-../HAL/LCD/../inc/LCD.h:
-../Inc/../STM32F103_DRIVERS/inc/STM32_F103C6_Driver.h:
-../Inc/../STM32F103_DRIVERS/inc/STM32_F103X6.h:
