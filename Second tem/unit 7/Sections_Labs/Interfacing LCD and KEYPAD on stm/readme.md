@@ -69,16 +69,28 @@ The project provides a basic example of interfacing and controlling an LCD displ
 Here's a simplified example of initializing the LCD and displaying text:
 
 ```c
-Copy code
-#include "lcd.h"
-
 int main() {
+    // Initialize LCD and keypad
     LCD_Init();
-    LCD_Print("Hello, STM32!");
+    Keypad_Init();
     
+    // Display a welcome message
+    LCD_Clear();
+    LCD_Print("Welcome to");
+    LCD_SetCursor(1, 0);
+    LCD_Print("STM32F103 Project");
+    
+    // Main application loop
     while (1) {
-        // Your code here
+        // Read keypad input
+        char key = Keypad_Read();
+        
+        // Process key press
+        if (key != '\0') {
+            // Handle key press (e.g., update display, perform actions)
+        }
     }
+    return 0;
 }
 ```
 
