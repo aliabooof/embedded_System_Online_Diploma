@@ -26,8 +26,9 @@ Interfacing an LCD and a keypad with an AVR microcontroller is a common requirem
 - Power supply (e.g., batteries or external power source)
 
 ## Circuit Diagram
+![20230910_070417](https://github.com/aliabooof/embedded_System_Online_Diploma/assets/62174374/a65f88f6-346c-49a8-bb43-89fe74b57eee)
 
-![Circuit Diagram](circuit_diagram.png)
+
 
 Include a circuit diagram here that shows the connections between the AVR microcontroller, LCD, and keypad. You can create one using software like Fritzing or draw it manually.
 
