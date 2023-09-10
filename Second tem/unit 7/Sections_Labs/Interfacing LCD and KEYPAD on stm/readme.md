@@ -76,7 +76,7 @@ int main() {
         // Main loop
     }
 }
-#Contributing
+## Contributing
 Contributions are welcome! If you'd like to contribute to this project, please follow these guidelines:
 
 Fork the repository.
