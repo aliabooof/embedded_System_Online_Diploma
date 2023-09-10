@@ -82,9 +82,9 @@ int main() {
 ## Contributing
 Contributions to this project are welcome! If you'd like to contribute, please follow these guidelines:
 
-Fork the repository.
-Create a new branch for your feature or bug fix.
-Make your changes and test them thoroughly.
-Create a pull request with a clear description of your changes.
-License
-This project is licensed under the MIT License - see the LICENSE file for details.
+- Fork the repository.
+- Create a new branch for your feature or bug fix.
+- Make your changes and test them thoroughly.
+- Create a pull request with a clear description of your changes.
+
+
