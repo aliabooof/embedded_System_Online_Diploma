@@ -37,6 +37,6 @@ For detailed usage instructions and examples, refer to  the code comments in the
 
 ## Author
 
-The driver was authored by [Ali AboOuf]([https://github.com/yourusername](https://github.com/aliabooof)). If you have any questions or suggestions, you can contact the author at [Email](aliabooof42@gmail.com).
+The driver was authored by [Ali AboOuf]([https://github.com/aliabooof]). If you have any questions or suggestions, you can contact the author at [Email](aliabooof42@gmail.com).
 
 
