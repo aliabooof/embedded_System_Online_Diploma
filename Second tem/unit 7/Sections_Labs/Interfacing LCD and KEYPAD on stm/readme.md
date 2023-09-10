@@ -1,6 +1,8 @@
 # STM32F103 LCD and Keypad Interfacing Project
 
-![Project Demo](demo_image.jpg)
+##Project Demo
+![sec2](https://github.com/aliabooof/embedded_System_Online_Diploma/assets/62174374/bc782b00-8ccb-436c-954b-241e017289ca)
+
 
 ## Table of Contents
 
