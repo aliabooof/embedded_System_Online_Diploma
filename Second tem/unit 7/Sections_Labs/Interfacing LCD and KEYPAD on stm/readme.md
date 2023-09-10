@@ -1,7 +1,5 @@
 # STM32F103 LCD and Keypad Interfacing Project
 
-This repository contains the source code and documentation for an STM32F103 project that interfaces an LCD (Liquid Crystal Display) and a keypad. This project is designed to demonstrate the capabilities of the STM32F103 microcontroller in conjunction with these peripheral devices.
-
 ![Project Demo](demo_image.jpg)
 
 ## Table of Contents
@@ -12,12 +10,12 @@ This repository contains the source code and documentation for an STM32F103 proj
 - [Getting Started](#getting-started)
 - [Project Structure](#project-structure)
 - [Usage](#usage)
-- [Contributing](#contributing)
+- [Contributing](#Contributing)
 - [License](#license)
 
 ## Introduction
 
-This project showcases how to interface and control an LCD display and keypad using the STM32F103 microcontroller. It provides a basic example of how to set up the hardware connections and write code to display information on the LCD and receive input from the keypad.
+This repository contains the source code and documentation for an STM32F103 project that demonstrates the interfacing of an LCD (Liquid Crystal Display) and a keypad with the STM32F103 microcontroller. The project showcases how to set up the hardware connections, write code to display information on the LCD, and receive input from the keypad.
 
 ## Hardware Requirements
 
@@ -31,9 +29,11 @@ To replicate this project, you will need the following hardware components:
 
 ## Software Requirements
 
+Ensure you have the following software tools and libraries installed:
+
 - [STM32CubeIDE](https://www.st.com/en/development-tools/stm32cubeide.html) (or your preferred STM32 development environment)
 - STM32 HAL library
-- Keil, IAR, or other IDE if you prefer a different development environment
+- Keil, IAR, or another IDE if you prefer a different development environment
 - Git (optional, for cloning the repository)
 
 ## Getting Started
@@ -61,25 +61,30 @@ Drivers/: Contains STM32 HAL drivers.
 Docs/: Documentation and schematics related to the project.
 demo_image.jpg: An image demonstrating the project.
 Usage
-Describe how to use and interact with your project. Provide code snippets, usage examples, and any additional information necessary for users to understand and utilize your project effectively.
+The project provides a basic example of interfacing and controlling an LCD display and keypad using the STM32F103 microcontroller. You can find the main code in the Src/ directory.
 
-c
+Here's a simplified example of initializing the LCD and displaying text:
+
+```c
 Copy code
-// Example code snippet
 #include "lcd.h"
 
 int main() {
     LCD_Init();
     LCD_Print("Hello, STM32!");
-    // ... Your code here ...
+    
     while (1) {
-        // Main loop
+        // Your code here
     }
 }
+```
+
 ## Contributing
-Contributions are welcome! If you'd like to contribute to this project, please follow these guidelines:
+Contributions to this project are welcome! If you'd like to contribute, please follow these guidelines:
 
 Fork the repository.
 Create a new branch for your feature or bug fix.
 Make your changes and test them thoroughly.
 Create a pull request with a clear description of your changes.
+License
+This project is licensed under the MIT License - see the LICENSE file for details.
