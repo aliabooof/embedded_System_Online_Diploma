@@ -10,10 +10,10 @@
 ### First Term ![image](https://progress-bar.dev/100/?title=Done)
 
 - Unit 1: Diploma Prerequisites ![image](https://progress-bar.dev/100/?title=No_Assignments&color=bababa)
-- Unit 2: [C Programming](https://github.com/aliabooof/embedded_System_Online_Diploma/tree/main/First%20term/unit2) ![image](https://progress-bar.dev/100/)
-- Unit 3: Embedded C ![image](https://progress-bar.dev/100/)
-- Unit 4: System Architect ![image](https://progress-bar.dev/100/)
-- Unit 5: First Term Projects ![image](https://progress-bar.dev/100/)
+- [Unit 2: C Programming](https://github.com/aliabooof/embedded_System_Online_Diploma/tree/main/First%20term/unit2) ![image](https://progress-bar.dev/100/)
+- [Unit 3: Embedded C](https://github.com/aliabooof/embedded_System_Online_Diploma/tree/main/First%20term/unit3) ![image](https://progress-bar.dev/100/)
+- [Unit 4: System Architect](https://github.com/aliabooof/embedded_System_Online_Diploma/tree/main/First%20term/unit3) ![image](https://progress-bar.dev/100/)
+- [Unit 5: First Term Projects]  ![image](https://progress-bar.dev/100/)
 
 ---
 
