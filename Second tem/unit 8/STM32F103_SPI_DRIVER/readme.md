@@ -45,3 +45,4 @@ Connect the SPI-enabled peripheral devices to the appropriate SPI pins on your S
 Run your project and verify the SPI communication.
 
 ## Usage
+check the main.c file under Src folder
