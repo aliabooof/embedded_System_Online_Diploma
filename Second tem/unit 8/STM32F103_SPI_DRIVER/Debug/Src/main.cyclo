@@ -1,0 +1,4 @@
+../Src/main.c:35:6:clock_Init	1
+../Src/main.c:48:6:SPI_irq_callback	1
+../Src/main.c:58:6:UART_callback	1
+../Src/main.c:72:5:main	1
